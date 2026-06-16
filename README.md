@@ -1,15 +1,15 @@
 # 🧾 Handwritten Text Recognition using OCR
 
-A deployable Handwritten Text Recognition (HTR) system built using Python, OpenCV, Tesseract OCR, and Streamlit. This project extracts text from handwritten images by applying image preprocessing techniques and Optical Character Recognition (OCR).
+A Digital Image Processing (DIP) project that converts handwritten text images into machine-readable text using image preprocessing techniques and Optical Character Recognition (OCR).
 
 ## 🚀 Features
 
 - Upload handwritten images
 - Image preprocessing using OpenCV
-- Noise reduction and thresholding
+- Noise reduction and adaptive thresholding
 - Text extraction using Tesseract OCR
-- Simple and interactive Streamlit interface
-- Real-time OCR results
+- Interactive Streamlit web interface
+- Real-time OCR output
 
 ---
 
@@ -34,33 +34,29 @@ HTR-Project/
 ├── preprocessing.py
 ├── ocr.py
 ├── requirements.txt
-└── README.md
+├── README.md
+└── screenshots/
+    ├── Original image.png
+    └── Processed image.png
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/Handwritten-Text-Recognition.git
-cd Handwritten-Text-Recognition
-```
-
-### 2. Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Install Tesseract OCR
+### Install Tesseract OCR
 
 Download and install Tesseract OCR:
 
 https://github.com/UB-Mannheim/tesseract/wiki
 
-After installation, update the Tesseract path in `app.py`:
+After installation, update the path in `app.py`:
 
 ```python
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -80,46 +76,48 @@ streamlit run app.py
 
 1. Upload a handwritten image
 2. Convert image to grayscale
-3. Apply noise reduction
-4. Perform adaptive thresholding
+3. Apply Gaussian Blur for noise reduction
+4. Perform Adaptive Thresholding
 5. Extract text using Tesseract OCR
-6. Display recognized text
+6. Display the recognized text
 
 ---
 
-## 📸 Sample Output
+## 📸 Screenshots
 
-Input:
-- Handwritten image uploaded by user
+### Original Image
 
-Output:
-- Preprocessed image
-- Extracted digital text
+![Original Image](screenshots/Original%20Image.png)
+
+### Processed Image
+
+![Processed Image](screenshots/Processed%20Image.png)
 
 ---
 
-## 🎯 Future Improvements
+## 🎯 Future Enhancements
 
 - Hindi Handwriting Recognition
 - Multi-language OCR Support
-- Download Extracted Text as TXT/PDF
-- Improved Accuracy for Complex Handwriting
-- Line and Word Segmentation
+- Export OCR results to PDF/TXT
+- Improved recognition for complex handwriting
+- Word and line segmentation
 
 ---
 
-## 💡 Learning Outcomes
+## 📚 Learning Outcomes
 
-This project helped in understanding:
+Through this project, I learned:
 
-- Digital Image Processing (DIP)
-- Image Preprocessing Techniques
+- Digital Image Processing fundamentals
+- Image preprocessing techniques
 - Optical Character Recognition (OCR)
-- Streamlit Deployment
-- Real-world Document Digitization
+- OpenCV integration with Python
+- Streamlit application development
+- Deploying practical DIP solutions
 
 ---
 
 ## 👨‍💻 Author
 
-Developed as a Digital Image Processing (DIP) Project using OpenCV and OCR techniques.
+Developed as a Digital Image Processing (DIP) Project using OpenCV, Tesseract OCR, and Streamlit.
